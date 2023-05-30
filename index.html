@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atheena web</title>
+    <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+        .my_nav {
+            background-color: #98b0b3;
+        }
+
+        .xxx {
+            text-align: center;
+            border: 1px solid #ced4da;
+            padding-top: 20px;
+
+
+        }
+
+        .my_upload {
+            text-align: left;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .btn-linkedin:hover,
+        .btn-linkedin:focus {
+            background: #015682;
+            color: #ffffff;
+        }
+        .btn-instagram:hover,
+        .btn-instagram:focus {
+            background: #015682;
+            color: #ffffff;
+        }
+        .btn-facebook:hover,
+        .btn-facebook:focus {
+            background: #015682;
+            color: #ffffff;
+        }
+
+        .btn.btn-rounded {
+            border-radius: 50px;
+        }
+        .my_footer{
+            background-color: #98b0b3;
+
+        }
+        .pygrammers {
+            position: relative;
+        }
+
+        .pygrammers:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10px;
+            height: 100%;
+            width: 2px;
+            background-color: #000;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <header class="my_nav">
+        <div class="row my-auto">
+            <div class="col-md-6 col-9">
+                <a class="navbar-brand p-2" href="#">
+                    <img src="img/buildlogo.png" width="90" height="60" alt="" class="img-responsive">
+                </a>
+                <!-- <img src="img/buildlogo.png" alt="" style="width:100px; height:100px;" class="image"> -->
+            </div>
+            <div class="col-md-6 col-3 my-auto">
+                <nav class="navbar navbar-expand-lg navbar-light ml-auto">
+
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#home_section">Home <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#register">Register</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mentors">Mentors</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#participants">Participants</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- carousel starts-->
+    <section id="home_section">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/carousel.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/carousel.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/carousel2.png" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only text-info">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <!-- carousel ends-->
+    <section>
+        <div class="row">
+            <div class="col-md-12 text-center p-3">
+                <h4>Join us</h4>
+                <p>Pygrammers is the community of python enthusiast with similar idealogeis and intrests</p>
+                <a href="https://web.telegram.org/a/#-1391741786"><button type="button"
+                        class="btn btn-primary">Telegram</button></a>
+            </div>
+
+        </div>
+    </section>
+    <!--form starts-->
+    <section id="register">
+        <div class="row">
+            <div class="col-md-3 col-3"></div>
+            <div class="col-6 col-md-6 xxx">
+                <h2>Form:</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Mobile number</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Email Address</label>
+                        <input type="email" class="form-control" id="formGroupExampleInput2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Company/Institution Name</label>
+                        <input type="email" class="form-control" id="formGroupExampleInput2">
+                    </div>
+                    <div class="form-group my_upload">
+                        <label for="exampleFormControlFile1">Upload a short video or image of hand written
+                            sheet showing your
+                            intrest to join build my web</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label> -->
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Have you attend any events by Pygrammers before? </option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">NO</option>
+
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary ">Submit Form</button>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="col-md-3 col-3"></div>
+
+        </div>
+
+
+    </section>
+
+    <!--Form Ends-->
+    <!--cards starts-->
+    <section id="mentors">
+        <div class="container">
+            <h4 class="text-center p-3">Mentors</h2>
+                <!-- <div class="row mentors justify-content-center"> -->
+                <div class="row p-3 ">
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <div class="card" width="18rem">
+                            <img class="card-img-top"
+                                src="https://wallpapers.com/images/high/elon-musk-1600-x-900-picture-827vasjgwvur6wqq.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <div class="card" width="18rem">
+                            <img class="card-img-top"
+                                src="https://wallpapers.com/images/high/elon-musk-1600-x-900-picture-827vasjgwvur6wqq.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <div class="card" width="18rem">
+                            <img class="card-img-top"
+                                src="https://wallpapers.com/images/high/elon-musk-1600-x-900-picture-827vasjgwvur6wqq.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <div class="card" width="18rem">
+                            <img class="card-img-top"
+                                src="https://wallpapers.com/images/high/elon-musk-1600-x-900-picture-827vasjgwvur6wqq.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <div class="card" width="18rem">
+                            <img class="card-img-top"
+                                src="https://wallpapers.com/images/high/elon-musk-1600-x-900-picture-827vasjgwvur6wqq.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <div class="card" width="18rem">
+                            <img class="card-img-top"
+                                src="https://wallpapers.com/images/high/elon-musk-1600-x-900-picture-827vasjgwvur6wqq.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <div class="card" width="18rem">
+                            <img class="card-img-top"
+                                src="https://wallpapers.com/images/high/elon-musk-1600-x-900-picture-827vasjgwvur6wqq.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <div class="card" width="18rem">
+                            <img class="card-img-top"
+                                src="https://wallpapers.com/images/high/elon-musk-1600-x-900-picture-827vasjgwvur6wqq.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <div class="card" width="18rem">
+                            <img class="card-img-top"
+                                src="https://wallpapers.com/images/high/elon-musk-1600-x-900-picture-827vasjgwvur6wqq.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+        </div>
+
+
+        </div>
+
+    </section>
+    <!--end cards-->
+    <!--Participants-->
+    <section id="participants">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-12 text-center">
+                    <h4>Participants</h4>
+
+
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Designation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>mark@gmail.com</td>
+                                <td>Student</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Jacob@gamil.com</td>
+                                <td>Programmer</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>larry@gmail.com</td>
+                                <td>Developer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--end Participants -->
+    <!--footer starts-->
+    <footer class="my_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12 text-center p-2 d-flex align-items-center justify-content-center">
+                  
+                    <div class="mr-2">
+                      <button type="button" class="btn btn-social-icon btn-facebook btn-rounded ">
+                        <i class="fa fa-facebook"></i>
+                      </button>
+                    </div>                   
+                                    
+                    <div class="mr-2">
+                      <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded">
+                        <i class="fa fa-linkedin"></i>
+                      </button>
+                    </div>
+                    <div class="mr-2">
+                      <button type="button" class="btn btn-social-icon btn-instagram btn-rounded">
+                        <i class="fa fa-instagram"></i>
+                      </button>
+                    </div>
+                    <p class="mb-0 ml-2 pygrammers">Pygrammers</p>
+                  </div>
+                </div>
+             
+              
+        </div>
+
+
+    </footer>
+
+    <!--end footer-->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
